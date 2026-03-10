@@ -11,11 +11,19 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  display: flex;
+  min-height: 100vh;
+  background-color: #0b0c10;
+  color: #ffffff;
+}
+aside {
+  width: 200px;
+  background-color: #111217;
+  border-right: 1px solid #1f2128;
+  padding: 30px;
 }
 
-h1 {
-  font-family: 'IBM Plex Mono';
-  font-weight: 600;
+main {
+  flex: 1;
+  padding: 40px;
 }
