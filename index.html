@@ -4,33 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
     <script src="/js/main.js" defer></script>
     <title>Dashboard</title>
 </head>
 <body>
-    <aside>
-        <div class="Logo" src="/assets/img/logo.png" alt="Logo">
-
+    <aside class="menu">
+        <div class="Logo">
+          <img src="/assets/img/logo.png" alt="Brabo logo, company brand symbol for the wholesale admin dashboard"
         </div>
         <nav>
             <h3>Menu</h3>
             <ul>
-            <li><a href="Dashboard.html">Dashboard</a></li>
-            <li><a href="Clientes.html">Clientes</a></li>
-            <li><a href="Pedidos.html">Pedidos</a></li>
-            <li><a href="Produtos.html">Produtos</a></li>
-            <li><a href="Estoque.html">Estoque</a></li>
+            <li><a href="Dashboard.html"><i class="fi fi-rr-apps"></i>Dashboard</a></li>
+            <li><a href="Clientes.html"><i class="fi fi-rr-users"></i>Clientes</a></li>
+            <li><a href="Pedidos.html"><i class="fi fi-rr-shopping-cart">
+            </i>Pedidos</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <h3>Produtos</h3>
+            <ul>
+                <li><a href="Novo Produto.html"><i class="fi fi-rr-add"></i>Novo Produto</a></li>
+                <li><a href="Coleções.html"><i class="fi fi-rr-book-open-cover"></i>Categorias</a></li>
+                <li><a href="Estoque.html"><i class="fi fi-rr-home-location-alt"></i>Estoque</a></li>
             </ul>
         </nav>
     </aside>
+    
     <main>
         <header>
-            <h1>Dashboard</h1>
+            <h2>Dashboard</h2>
             <p>Visão geral do Brabo</p>
-            </header>
-            <section>
-                <article class="Card">
-                    <h3><span>Faturamento Mensal</span></h3>
+     </header>
+         <section class="cards-grid">
+             <article class="card">
+                <div class="card-header">
+                    <span class="card-title">Faturamento Mensal<span>
+                        <i class="fi fi-rr-dollar"></i>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-value">R$ 20.000</h2>
+                        <span class="card-status"> +5.2% vs mês anterior</span>
+                    </div>
+            
                 </article> <!-- O card do faturamento -->
                 
                 <article class="Card">
@@ -45,7 +63,8 @@
                     <h3><span>Clientes Ativos</span></h3>
                 </article> <!--Card dos Clientes ativos-->
             </section>
-            <section>
+         
+            <section class="grafico-container">
                 <h2>Vendas Mensais</h2>
                 <div>
 
