@@ -7,12 +7,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', 'IBM Plex Mono', sans-serif, monospace;
+  font-family: 'IBM Plex Mono', sans-serif, monospace;
 }
 
 body {
   background-color: black;
   color: white;
+}
+div.Logo {
+    width: 100%;
+    height: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 h1 {
