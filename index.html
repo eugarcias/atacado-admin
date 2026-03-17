@@ -33,54 +33,63 @@
         </nav>
     </aside>
     
-    <main>
+   <main>
         <header>
-            <h2>Dashboard</h2>
-            <p>Visão geral do Brabo</p>
-     </header>
+            <h2 class="title">Welcome to Dash</h2>
+            <span>
+                <p class="subtitle">E ae bora bater a meta?</p>
+            </span>
+        </header>
 
-     
-         <section class="cards-grid">
-            <!-- Cards de métricas -->
-             <article class="card">
+        <section class="cards-grid">
+            <article class="card">
                 <div class="card-header">
-                    <span class="card-title">Faturamento Mensal<span>
-                        <i class="fi fi-rr-dollar" id="card-icon"></i>
-                    </div>
-                    <div class="card-body">
-                        <span class="card-value">R$ 20.000</span>
-                        <span class="card-status"> +5.2% vs mês anterior</span>
-                    </div>
-                </article> 
-                
-                <!--Card de Pedidos-->
-                <article class="card">
-                    <div class="card-header">
-                    <span class="card-title">Pedidos</span>
-                    <i class="fi fi-rr-shopping-cart" id="card-icon"></i> 
-                    </div>
-                </article> 
-
-                <article class="card">
-                    <div class="card-header">
-                    <span class="card-title">Ticket Médio</span>
-                    <i class="fi fi-rr-dollar" id="card-icon"></i>
-                    </div>
-                </article>  
-
-                <article class="card">
-                    <div class="card-header">
-                    <span class="card-title">Clientes Ativos</span>
-                    <i class="fi fi-rr-users" id="card-icon"></i>
-                    </div>
-                </article>
-            </section>
-         
-            <section class="card-grafico">
-                <div>
-                <span class="card-title">Vendas Mensais</span>
-                <i class="fi fi-rr-chart-bar" id="card-icon"></i>
+                    <span class="card-title">Faturamento Mensal</span>
+                    <i class="fi fi-rr-dollar card-icon"></i>
+                </div> <div class="card-body">
+                    <span class="card-value">R$ 20.000</span>
+                    <span class="card-status">+5.2% vs mês anterior</span>
+                </div> </article> 
+            
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-title">Total de Pedidos</span>
+                    <i class="fi fi-rr-shopping-cart card-icon"></i>
                 </div>
+                <div class="card-body">
+                    <span class="card-value">190</span>
+                    <span class="card-status">+8.2% vs mês anterior</span> 
+                </div>
+            </article> 
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-title">Ticket Médio</span>
+                    <i class="fi fi-rr-up card-icon"></i>
+                </div>
+                <div class="card-body">
+                    <span class="card-value">R$ 159,71</span>
+                    <span class="card-status">+3.2% vs mês anterior</span>
+                </div>
+            </article>  
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-title">Clientes Ativos</span>
+                    <i class="fi fi-rr-users card-icon"></i>
+                </div>
+                <div class="card-body">
+                    <span class="card-value">51</span>
+                    <span class="card-status">+5.9% vs mês anterior</span>
+                </div>
+            </article>
+        </section>
+         
+        <section class="card-grafico">
+            <div class="card-header">
+                <span class="card-title">Vendas Mensais</span>
+                <i class="fi fi-rr-chart-bar card-icon"></i>
+            </div>
             </section>
     </main>
 </body>

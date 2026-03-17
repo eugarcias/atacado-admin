@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
   :root {
   /* Paleta de Cores */
   --cor-primaria: #7F0008;   /* Ex: botões, links */
@@ -34,7 +37,17 @@ body {
   color: #EDEDED;
   padding: 20px;
 }
-
+.title {
+  font-family: 'IBM PLex Mono', sans-serif, monospace;
+  font-weight: 700;
+  font-size: 40px;
+}
+.subtitle {
+  font-family: 'IBM Plex Mono', sans-serif, monospace;
+  color:#a1a1aa;
+  font-weight: 400;
+  font-size: 16px;
+}
 img {
   width: 100px;
   height: auto;
@@ -98,6 +111,12 @@ main {
   flex-direction: column;
   gap: 15px;
 }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+ 
+}
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -112,7 +131,7 @@ main {
   padding-bottom: 12px;
 }
 
-#card-icon {
+.card-icon {
   color: #7F0008;
   font-size: 16px;
   
@@ -129,7 +148,7 @@ main {
 .card-title {
   font-size: 14px;
   color: #a1a1aa;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .card-value {
@@ -142,4 +161,5 @@ main {
   font-size: 12px;
   color: #28a745;
   font-weight: 500;
+  
 }
