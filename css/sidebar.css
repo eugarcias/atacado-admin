@@ -1,0 +1,110 @@
+/* =========================================
+   /css/sidebar.css
+   ========================================= */
+aside.menu {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px 20px;
+  background-color: #111217;
+  border-right: 1px solid #1f2128;
+}
+
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+aside ul { list-style: none; margin-bottom: 24px; }
+aside h3 { font-size: small; font-weight: 400; color: #a1a1aa; margin-bottom: 15px; }
+
+aside a {
+  text-decoration: none;
+  color: #EDEDED;
+  font-size: 15px;
+  display: flex;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  gap: 12px;
+  align-items: center;
+}
+
+aside a i { color: #7F0008; font-size: 18px; }
+li:hover a { background-color: #1f2128; color: white; }
+
+/* -----------------------------------------
+   PERFIL DO USUÁRIO - O ALINHAMENTO DEFINITIVO
+   ----------------------------------------- */
+.user-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  padding-top: 20px;
+  border-top: 1px solid #1f2128;
+  width: 100%;
+  margin-top: auto;
+  flex-wrap: nowrap; /
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  min-width: 0; 
+}
+
+.user-info img.user-avatar {
+  width: 40px !important;
+  height: 40px !important;
+  margin: 0 !important; 
+  display: block !important;
+  border-radius: 50%;
+  border: 2px solid #7F0008;
+  object-fit: cover;
+  background-color: #1f2128;
+  flex-shrink: 0; 
+}
+
+.user-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #EDEDED;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+
+.user-role {
+  font-size: 11px;
+  color: #a1a1aa;
+  white-space: nowrap;
+}
+
+aside a.settings-icon {
+  padding: 5px !important;
+  background: transparent !important;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+aside a.settings-icon i {
+  color: #a1a1aa;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+aside a.settings-icon:hover i { color: #ef4444; }
