@@ -60,7 +60,82 @@ aside {
   border-right: 1px solid #1f2128;
   padding: 30px;
 }
+aside.menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px 20px;
+  background-color: #111217;
+}
 
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-top: 1px solid #1f2128;
+  width: 100%;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #7F0008;
+  object-fit: cover;
+  flex-shrink: 0;
+  background-color: #1f2128;
+  margin-bottom: 0
+}
+
+.user-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #EDEDED;
+    line-height: 1.2;;
+}
+
+.user-role {
+    font-size: 11px;
+    color: #a1a1aa;
+}
+aside a.settings-icon {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.settings-icon i {
+    color: #7F0008;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+aside a.settings-icon:hover i {
+  color: #EDEDED; 
+  transform: rotate(45deg);
+}
 aside ul {
   list-style: none;
   margin-bottom: 24px;
