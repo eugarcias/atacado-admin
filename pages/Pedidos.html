@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/tabelas.css">
   
  
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -18,9 +19,91 @@
 
     <main>
         <header>
-            <h2>Gerenciamento de Pedidos</h2>
-            <p>Aqui você controla o fluxo de energia da marca!</p>
+            <h1 class="title">Pedidos</h1>
+            <p class="subtitle">Gerencie todos os pedidos.</p>
         </header>
+        <div class="table-container">
+            <div class="table-header">
+                Todos os Pedidos
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pedido</th>
+                        <th>Cliente</th>
+                        <th>Data</th>
+                        <th>Itens</th>
+                        <th>Total</th>
+                        <th>Forma de Pagamento</th>
+                        <th>Status</th>
+                        <th>Envio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1000</td>
+                        <td>Daniel Longaray</td>
+                        <td>29/03/2026</td>
+                        <td>1</td>
+                        <td>R$ 100,00</td>
+                        <td><span class="tag-pagamento">Pix</span></td>
+                        <td> <span class="status-badge status-pago">Pago</span></td>
+                        <td><span class="status-badge status-em-transito">Em Trânsito</span></td>
+                    </tr>
+                    <tr>
+                        <td>#1001</td>
+                        <td>Maurício Garcia</td>
+                        <td>28/03/2026</td>
+                        <td>3</td>
+                        <td>R$ 250,00</td>
+                        <td><span class="tag-pagamento">Cartão de Crédito</span></td>
+                        <td> <span class="status-badge status-cancelado">Cancelado</span></td>
+                        <td><span class="status-badge status-envio-cancelado">Envio Cancelado</span></td>
+                    </tr>
+                    <tr>
+                        <td>#1002</td>
+                        <td>Iruan Santana</td>
+                        <td>27/03/2026</td>
+                        <td>2</td>
+                        <td>R$ 150,00</td>
+                        <td>Boleto Bancário</td>
+                        <td> <span class="status-badge status-pendente">Pendente</span></td>
+                        <td><span class="status-badge status-aguardando-pagamento">Aguardando Pagamento</span></td>
+                    </tr>
+                    <tr>
+                        <td>#1003</td>
+                        <td>Gustavo Silva</td>
+                        <td>26/03/2026</td>
+                        <td>5</td>
+                        <td>R$ 500,00</td>
+                        <td><span class="tag-pagamento">Pix</span></td>
+                        <td> <span class="status-badge status-pago">Pago</span></td>
+                        <td><span class="status-badge status-entregue">Entregue</span></td>
+                    </tr>
+                    <tr>
+                        <td>#1004</td>
+                        <td>Larissa Costa</td>
+                        <td>25/03/2026</td>
+                        <td>4</td>
+                        <td>R$ 300,00</td>
+                        <td><span class="tag-pagamento">Cartão de Crédito</span></td>
+                        <td> <span class="status-badge status-pago">Pago</span></td>
+                        <td><span class="status-badge status-aguardando-envio">Aguardando Envio</span></td>
+                    </tr>
+                    <tr>
+                        <td>#1005</td>
+                        <td>Bruno Fernandes</td>
+                        <td>24/03/2026</td>
+                        <td>1</td>
+                        <td>R$ 80,00</td>
+                        <td><span class="tag-pagamento">Boleto Bancário</span></td>
+                        <td> <span class="status-badge status-pago">Pago</span></td>
+                        <td><span class="status-badge status-separando">Separando</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       
         </main>
 
     <script src="/js/main.js"></script>

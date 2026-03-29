@@ -1,0 +1,17 @@
+
+.card {
+  background-color: #111217;
+  border: 1px solid #1f2128;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}

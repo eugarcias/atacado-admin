@@ -1,0 +1,116 @@
+
+
+ /* Container da tabela */
+.table-container {
+    background-color: #111217;
+    border: 1px solid #1f2128;
+    border-radius: 8px;
+    margin-top: 30px;
+    width: 100%;
+    overflow-x: auto;
+}
+   /* Titulo da tabela */
+.table-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #1f2128;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 16px 24px;
+    border-bottom: 1px solid #1f2128;
+    color: #e0e0e0;
+}
+
+th {
+    color: #a1a1a1;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+td {
+    color: #ededed;
+    font-size: 14px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+}
+
+.status-pago {
+    background-color: rgba(53, 220, 84, 0.1);
+    color: #35dc54;
+    border: 1px solid rgba (220, 53, 69, 0.2); 
+}
+
+.status-pendente {
+    background-color: rgba(230, 251, 0, 0.1);
+    color: #ffbf00;
+    border: 1px solid rgba(220, 53, 69, 0.2);
+}
+
+.status-cancelado {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    border: 1px solid rgba(220, 53, 69, 0.2);
+}
+
+.status-aguardando-pagamento {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+.status-aguardando-envio {
+    background-color: rgba(0, 55, 63, 0.1);
+    color: #17a2b8;
+    border: 1px solid rgba(23, 162, 184, 0.2);
+}
+
+.status-em-transito {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+.status-envio-cancelado {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    border: 1px solid rgba(220, 53, 69, 0.2);
+}
+
+.status-entregue {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+    border: 1px solid rgba(40, 167, 69, 0.2);
+}
+
+.status-separando {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.tag-pagamento {
+    background-color: transparent;
+    color: #a1a1a1;
+    border: 1px solid rgba(161, 161, 161, 0.2);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
