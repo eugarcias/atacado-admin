@@ -11,9 +11,64 @@
 </head>
 <body>
     <aside id="sidebar-container" class="menu"></aside>
-
     <main>
-        </main>
+        <header>
+            <h1 class="title">Clientes</h1>
+            <p class="subtitle">Gerencie seus clientes cadastrados</p>
+        </header>
+        <section class="cards-grid">
+            <article class="card">
+                
+                    <i class="fi fi-rr-users"></i>
+                    <div class="card-body">
+                        <span class="card-value">8</span>
+                        <span class="card-description">clientes cadastrados</span>
+                    </div>
+                
+            </article>
+
+            <article class="card">
+                    <i class="fi fi-rr-dollar"></i>
+                    <div class="card-body">
+                        <span class="card-value">R$ 15.000,00</span>
+                        <span class="card-description">Receita total</span>
+                </div>
+            </article>
+
+             <article class="card">
+            <i class="fi fi-rr-shopping-cart"></i>
+            <div class="card-body">
+                <span class="card-value">350</span>
+                <span class="card-description">Total de Pedidos</span>
+            </div>
+        </article>
+
+        </section>
+        <div class="table-container">
+            <div class="table-header">Clientes Cadastrados</div>
+            <div>
+                <input type="text" class="search-input" placeholder="Buscar por nome, e-mail, documento...">
+                <button class="search-button"><span class="fi fi-rr-search"></span></button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Documento</th>
+                        <th>Celular</th>
+                        <th>Cidade/UF</th>
+                        <th>Pedidos</th>
+                        <th>Total Gasto</th>
+                        <th>Última Compra</th>
+                       
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </main>
+
+   
 
     <script src="/js/main.js"></script>
 </body>
