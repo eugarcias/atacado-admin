@@ -13,7 +13,74 @@
     <aside id="sidebar-container" class="menu"></aside>
 
     <main>
-        </main>
+        <header style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px;">
+           <div>
+                <h1 class="title">Novo Produto</h1>
+                <p class="subtitle">Cadastre um novo produto</p>
+           </div> 
+           <div style="display: flex; gap:12px;">
+                <button class="btn-secondary">Cancelar</button>
+                <button class="btn-primary"> <i class="fi fi-rr-disk"></i> Salvar Produto</button>
+           </div>
+        </header>
+        <form id="product-form" style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px;">
+            <div style="display: flex; flex-direction: column; gap: 24px;">
+                <div class="card">
+                    <div class="form-group">
+                        <label>Nome do Produto</label>
+                        <input type="text" placeholder="Digite o nome do produto">
+                    </div>
+                    <div class="form-group">
+                        <label>Descrição</label>
+                        <textarea placeholder="Digite a descrição do produto"></textarea>
+                    </div>
+                    <div class="upload-area"><i class="fi fi-rr-picture"></i>
+                    <p><strong>Upload de Imagem</strong> ou arraste os arquivos aqui.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <span class="card-title" style="margin-bottom: 15px; display: block;">Inventário</span>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        <div class="form-group">
+                            <label>Quantidade em Estoque</label>
+                            <input type="number" placeholder="Digite a quantidade em estoque">
+                        </div>
+                        <div class="form-group">
+                            <label>Preço de Venda</label>
+                            <input type="number" placeholder="Digite o preço de venda" step="0.01">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <span class="card-title" style="margin-bottom: 15px; display: block;">Precificação</span>
+                    <div class="form-group">
+                        <label>Preço de Custo</label>
+                        <input type="number" placeholder="Digite o preço de custo" step="0.01">
+                    </div>
+                </div>
+                 <div class="card">
+                    <span class="card-title" style="margin-bottom: 15px; display: block;">Organização</span>
+                    <div class="form-group">
+                        <label>Categoria</label>
+                        <select class="form-control">
+                            <option>Selecione...</option>
+                            <option>Camisetas</option>
+                            <option>Calças</option>
+                            <option>Acessórios</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label>Status</label>
+                        <select class="form-control">
+                            <option>Ativo (Visível na loja)</option>
+                            <option>Rascunho</option>
+                        </select>
+                    </div>
+
+
+            </div>
+        </form>
+    </main>
 
     <script src="/js/main.js"></script>
 </body>
