@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/tabelas.css">
 </head>
 <body>
     <aside id="sidebar-container" class="menu"></aside>
@@ -19,16 +20,16 @@
         <section class="cards-grid">
             <article class="card">
                 
-                    <i class="fi fi-rr-users"></i>
+                    <i class="fi fi-rr-users card-icon"></i>
                     <div class="card-body">
                         <span class="card-value">8</span>
-                        <span class="card-description">clientes cadastrados</span>
+                        <span class="card-description">Clientes cadastrados</span>
                     </div>
                 
             </article>
 
             <article class="card">
-                    <i class="fi fi-rr-dollar"></i>
+                    <i class="fi fi-rr-dollar card-icon"></i>
                     <div class="card-body">
                         <span class="card-value">R$ 15.000,00</span>
                         <span class="card-description">Receita total</span>
@@ -36,7 +37,7 @@
             </article>
 
              <article class="card">
-            <i class="fi fi-rr-shopping-cart"></i>
+            <i class="fi fi-rr-shopping-cart card-icon"></i>
             <div class="card-body">
                 <span class="card-value">350</span>
                 <span class="card-description">Total de Pedidos</span>
@@ -44,12 +45,20 @@
         </article>
 
         </section>
-        <div class="table-container">
-            <div class="table-header">Clientes Cadastrados</div>
-            <div>
-                <input type="text" class="search-input" placeholder="Buscar por nome, e-mail, documento...">
-                <button class="search-button"><span class="fi fi-rr-search"></span></button>
-            </div>
+       <div class="table-container">
+    <div class="table-header" style="border-bottom: none; padding-bottom: 15px;">
+        Clientes Cadastrados
+    </div>
+    
+    <div class="table-actions">
+        <div class="search-box">
+            <i class="fi fi-rr-search"></i>
+            <input type="text" placeholder="Buscar por nome, e-mail, documento...">
+        </div>
+        
+        </div>
+    <table>
+        <thead>
             <table>
                 <thead>
                     <tr>

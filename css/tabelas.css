@@ -1,6 +1,6 @@
 
 
- /* Container da tabela */
+ 
 .table-container {
     background-color: #111217;
     border: 1px solid #1f2128;
@@ -9,7 +9,7 @@
     width: 100%;
     overflow-x: auto;
 }
-   /* Titulo da tabela */
+   
 .table-header {
     padding: 20px 24px;
     border-bottom: 1px solid #1f2128;
@@ -45,6 +45,9 @@ td {
 tr:last-child td {
     border-bottom: none;
 }
+
+.card-icon { color: #7F0008; font-size: 16px; }
+.card-description { font-size: 14px; color: #00f87c; font-weight: 400; }
 
 .status-badge {
     padding: 4px 12px;
@@ -114,4 +117,101 @@ tr:last-child td {
     padding: 4px 10px;
     border-radius: 20px;
     font-size: 12px;
+}
+
+
+.client-link {
+    color: #EDEDED;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.client-link:hover {
+    color: #7F0008; 
+    text-decoration: underline;
+}
+
+
+.client-link i {
+    font-size: 10px;
+    color: #a1a1aa;
+    transition: color 0.2s;
+}
+
+.client-link:hover i {
+    color: #7F0008;
+}
+
+/* -----------------------------------------
+   TAGS DE STATUS DE CLIENTES
+   ----------------------------------------- */
+   
+.status-vip {
+    background-color: rgba(255, 215, 0, 0.1);
+    color: #ffd700; 
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.status-ativo {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745; 
+    border: 1px solid rgba(40, 167, 69, 0.2);
+}
+
+.status-inativo {
+    background-color: rgba(161, 161, 170, 0.1);
+    color: #a1a1aa;
+    border: 1px solid rgba(161, 161, 170, 0.2);
+}
+/* =========================================
+ (BARRA DE PESQUISA)
+   ========================================= */
+
+.table-actions {
+    padding: 0 24px 20px 24px; 
+    border-bottom: 1px solid #1f2128;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #0b0c10; 
+    border: 1px solid #1f2128;
+    border-radius: 8px;
+    padding: 10px 16px;
+    width: 350px; 
+    transition: border-color 0.2s;
+}
+
+
+.search-box:focus-within {
+    border-color: #7F0008;
+}
+
+.search-box i {
+    color: #a1a1aa;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+
+.search-box input {
+    background: transparent;
+    border: none;
+    color: #EDEDED;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #a1a1aa;
 }

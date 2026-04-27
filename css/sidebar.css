@@ -86,7 +86,7 @@ li:hover a { background-color: #1f2128; color: white; }
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; 
-
+}
 .user-role {
   font-size: 11px;
   color: #a1a1aa;
